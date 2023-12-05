@@ -27,6 +27,7 @@ body {
 }
 
 .innerLabel {
+    height: 1.5pc;
     background-color: rgb(44, 219, 44);
     color: white;
 }

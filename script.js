@@ -5,10 +5,16 @@ function openDeleter() {
 
 function closeDeleter() {
     deletr.style.display = 'none';
+
 }
+
+let bar = document.getElementById('bar');
+
+bar.style.width = '0%';
 function move() {
+    bar.innerHTML = '0%';
+
     deletr.style.display = 'none';
-    let bar = document.getElementById('bar');
 
     var width = 38;
 
