@@ -4,8 +4,108 @@
     box-sizing: border-box;
 }
 
+body {
+    background: radial-gradient( rgb(8, 43, 8), rgb(8, 13, 1));
+}
+
 
 .approot {
-    margin: 0 auto;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1pc;
+    margin: 10pc auto;
+    width: 70%;
+    padding: 1pc;
+    text-align: center;
+    color: rgb(44, 219, 44);
+
 }
+
+.outerLabel {
+    border: .1pc solid rgb(44, 219, 44);
+}
+
+.innerLabel {
+    background-color: rgb(44, 219, 44);
+    color: white;
+}
+
+
+#deleter {
+    height: 2.5pc;
+    width: 7pc;
+    background-color: transparent;
+    color: white;
+
+}
+
+
+/* dialog box */
+.outerdialog {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    margin: 0 auto;
+    border: .1pc solid cyan;
+    width: 80%;
+    padding: 1pc;
+    background-color: rgb(8, 158, 158);
+    border-radius: 0 18px 0 0;
+    display: none;
+}
+
+.innerdialog {
+    background-color: cyan;
+}
+
+.delheader {
+    background-color: rgb(32, 7, 90);
+    color: gold;
+    font-weight: 800;
+    font-size: larger;
+}
+
+
+.confirmerbox {
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+    grid-auto-rows: auto;
+}
+
+.innerconfirmer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1pc;
+    padding: 1pc;
+    text-align: center;
+}
+
+.delterbtn {
+    height: 2.5pc;
+    width: 5pc;
+    background-color: rgb(12, 90, 179);
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+.delterbtn:hover {
+    background-color: goldenrod;
+}
+
+.specimenimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: .5pc;
+}
+
+.specimenimg > img {
+    border-radius: 8px;
+}
+
+
+

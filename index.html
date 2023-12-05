@@ -3,15 +3,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rick System</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <div class="approot">
         <div class="deleter">DELETING...</div>
-        <progress id="progress" max="100" value="38" ></progress>
+        <div class="outerLabel">
+            <div class="innerLabel" id="bar"   style="width: 0%;">0%</div>
+        </div>
         <div class="specimen">
             <p class="specimenname">SPECIMEN</p>
             <p class="specimenNo">#12029</p>
         </div>
+        <div class="deleter">
+            <button id="deleter" onclick="openDeleter()" >CLEAR</button>
+        </div>
+    </div>
+
+    <!--Dialog box for confirming delete-->
+
+    <div class="outerdialog">
+        <div class="innerdialog">
+            <div class="delheader">DELETE</div>
+            <!--Grid box-->
+            <div class="confirmerbox">
+                <div class="empty"></div>
+                <div class="innerconfirmer">
+                    <p class="confirmertext">Are you sure you want to delete all the contents of SPECIMEN #12029</p>
+                    <div class="confirmerbtns">
+                        <button class="delterbtn" id="yesDelete" onclick="move()">YES</button>
+                        <button id="noDelete" class="delterbtn" onclick="closeDeleter()">NO</button>
+                    </div>
+                </div>
+                <div class="specimenimg">
+                    <img src="./images/bossbaby.JPG" width="50" alt="Specimen" id="speciimg">
+                </div>
+                <div class="empty"></div>
+            </div>
+        </div>
     </div>
 </body>
+<script src="./script.js"></script>
 </html>
